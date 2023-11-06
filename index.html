@@ -15,6 +15,31 @@
             <li> <a href="travel.html">Travel</a></li>
             <li> <a href="recipes.html">Recipes</a></li>
         </ul>
+       <style>
+            body {
+                background-color: #fff;
+                color: #000;
+                transition: background-color 0.5s, color 0.5s;
+            }
+    
+            .dark-mode {
+                background-color: #333;
+                color: #fff;
+            }
+    
+            .toggle-btn {
+                padding: 10px;
+                cursor: pointer;
+            }
+        </style>
+        <button class="toggle-btn" onclick="toggleDarkMode()">Click for Dark Mode</button>
+
+        <script>
+            function toggleDarkMode() {
+                const body = document.body;
+                body.classList.toggle('dark-mode');
+            }
+        </script>
     </nav>
 
     <main id = "main">
